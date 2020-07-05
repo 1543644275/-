@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="zh" >
+	<head>
+		<meta charset="UTF-8">
+
+		<title>珍爱生命，远离毒品</title>
+		<link href="css/content.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+
+		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+		<script src="js/jquery-2.1.1.min.js"></script><!--导航栏js-->
+		<script src="js/main.js"></script> <!-- 导航栏js -->
+		<script src="js/echarts.js"></script><!--图表js-->
+		<script src="js/dark.js"></script><!--图表引入主题-->
+	 	<script src="js/spin.js"></script>
+	
+	    <script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script><!--毒品危害部分图表js-->
+        <script src="https://code.highcharts.com.cn/highcharts/themes/dark-unica.js"></script>
+        <script src="https://code.highcharts.com.cn/highcharts/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com.cn/highcharts/modules/dumbbell.js"></script>
+        <script src="https://code.highcharts.com.cn/highcharts/modules/lollipop.js"></script>
+       
+       
+
+	</head>
+	<body>
+		<nav class="cd-vertical-nav">
+			<ul>
+				<li><a href="#section1" class="active"><span class="label">首页</span></a></li>
+				<li><a href="#section2"><span class="label">毒品种类</span></a></li>
+				<li><a href="#section3"><span class="label">贩毒</span></a></li>
+				<li><a href="#section4"><span class="label">吸毒</span></a></li>
+				<li><a href="#section5"><span class="label">毒品危害</span></a></li>
+				<li><a href="#section6"><span class="label">禁毒</span></a></li>
+			</ul>
+		</nav><!-- .cd-vertical-nav -->
+
+		<button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
+
+		<section id="section1" class="cd-section"><!--网站首页-->
+			<div class="content-wrapper">
+				<div class="htmleaf-header">
+				  <br><br><br>
+			
+			<!--开头部分-->
+			<div class="begining">
+				<h1>珍爱生命，远离毒品！</h1>
+				<br><br><br><br><br><br><br>
+				<p class="text">毒品是指鸦片、海洛因、甲基苯丙胺（冰毒）、吗啡、大麻、可卡因以及国家规定管制的其他能够使人形成瘾癖的麻醉药品和精神药品。毒品是一道万丈深渊，一旦你因一步之差而掉入这个罪恶的陷阱后，将永无重见光明之日!</p>
+			</div>
+			<br><br><br>
+			
+			</div>
+				<a href="#section2" class="cd-scroll-down cd-image-replace">scroll down</a><!--下一页滑动按钮-->
+			</div>
+		</section>
+
+		<section id="section2" class="cd-section">
+			<br><br><br><br><br>
+			<h2>(一)毒品的常见种类</h2>
+			<br><br><br><br>
+			<div class="text1">一个个五花八门的名字背后都隐藏着一个共同的名字--毒品，请擦亮你的眼睛，看清它背后的黑暗。</div>
+			<div class="data6">
+				<div id="main" style="width: 700px;height:500px;"></div>
+			  	<script>
+					var myChart = echarts.init(document.getElementById('main'),'dark');
+					var data = {
+								 "name": "毒品",
+				"children": [
+					{
+						"name": "传统毒品",
+						"children": [
+							{"name": "鸦片"},
+							{"name": "吗啡"},
+							{"name": "海洛因"},
+							{"name": "大麻"},
+							{"name": "杜冷丁"},
+							{"name": "古柯"},
+							{"name": "可卡因"}
+						]
+
+					},
+					{
+						"name": "新型毒品",
+						"children": [
+							{"name": "冰毒",},
+							{"name": "摇头丸"},
+							{"name": "K粉"},
+							{"name": "咖啡因"},
+							{"name": "三唑仑"},
+							{"name": "羟基丁酸"}
+						]
+					}
+					]
+					};
+
+
+				var option = {
+					tooltip: {
+						trigger: 'item',
+						triggerOn: 'mousemove'
+					},
+					series: [
+						{
+							type: 'tree',
+
+							data: [data],
+
+							top: '1%',
+							left: '7%',
+							bottom: '1%',
+							right: '20%',
+
+							symbolSize: 7,
+
+							label: {
+								position: 'left',
+								verticalAlign: 'middle',
+								align: 'right',
+								color:'#F8F8FF',
+								fontSize: 12
+							},
+
+							leaves: {
+								label: {
+									position: 'right',
+									verticalAlign: 'middle',
+									align: 'left'
+								}
+							},
+
+							expandAndCollapse: true,
+							animationDuration: 550,
+							animationDurationUpdate: 750
+						}
+					]
+				};
+					  myChart.setOption(option);
+
+				</script>
+			</div>
+			<br><br>
+		</section>
+		<br>
+		<!--贩毒部分-->
+		<section id="section3" class="cd-section">
+			<div class="content-wrapper">
+				<br><br><br><br><br>
+				<h2>(二)贩毒</h2>
+			</div>
+			<br><br><br><br>
+			<div class="text1">贩卖的不仅仅是毒品，还有一个个家庭的希望。</div>
+			<br><br><br><br><br>
+		<!--四大毒源gif-->
+			<div class="drugSoure">
+				<h4>世界四大毒品源地</h4>
+				<br>
+				<img src="img/drugSoure.gif" alt="世界四大毒源地" width="700px" height="400px">
+			</div>
+			<div class="text2">
+				金三角：最大的鸦片产地	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金新月：第二大的鸦片产地
+				<br>
+				白三角：主产可卡因和大麻 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黑三角：主产大麻
+				</div>
+			
+			<br><br><br><br><br>
+			<div class="data3">
+				<div id="main1" style="width: 600px;height:400px;"></div>
+				<script> 
+				var myChart = echarts.init(document.getElementById('main1'),'dark');
+				var option = {
+					title: {
+						text: '贩毒形势图', subtext: '(万)'
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+							type: 'cross',
+							label: {
+								backgroundColor: '#6a7985'
+							}
+						}
+					},
+					legend: {
+						data: ['强制戒毒人数', '破获毒品犯罪案件', '抓获嫌疑人']
+					},
+					toolbox: {
+						feature: {
+							saveAsImage: {}
+						}
+					},
+					grid: {
+						left: '3%',
+						right: '4%',
+						bottom: '3%',
+						containLabel: true
+					},
+					xAxis: [
+						{
+							type: 'category',
+							boundaryGap: false,
+							data: ['2007年', '2008年', '2009年', '2010年', '2011年', '2012年', '2013年','2014年','2015年','2016年','2017年','2018年','2019年']
+						}
+					], 
+
+					yAxis: [
+						{
+							type: 'value'
+						}
+					],
+					series: [
+						{
+							name: '强制戒毒人数',
+							type: 'line',
+							stack: '总量',
+							areaStyle: {},
+							data: [26.8,26.4,17.3,17.5,17.1,20.2,24.2,26.4,24,35.7,32.1,27.9,22]
+						},
+						{
+							name: '破获毒品犯罪案件',
+							type: 'line',
+							stack: '总量',
+							areaStyle: {},
+							data: [5.6,6.19,7.7,8.9,10.17,12.2,15,14.59,16.5,14,14,10.96,8.3]
+						},
+						{
+							name: '抓获嫌疑人',
+							type: 'line',
+							stack: '总量',
+							areaStyle: {},
+							data: [6.7,7.34,9.1,10.1,11.2,13.3,16.8,16.89,19.4,16.8,16.9,13.74,11.3]
+						}
+					]
+				};
+
+
+				 myChart.setOption(option);
+				</script>
+			</div>
+			<br><br><br><br><br>
+		</section><!-- cd-section -->
+		
+		
+		<section id="section4" class="cd-section">
+			<br><br><br><br><br>
+			<h2>（三）吸毒</h2>
+			<br><br><br><br>
+			<div class="text1">莫让一时的快感成为你一生的折磨。</div>
+			<br><br><br><br><br>
+			<!--2014-2019年中国现有不同年龄吸毒人数和总人数趋势-->
+			<div class="data1">
+				<h4>2014-2019年中国现有不同年龄吸毒人数和总人数趋势</h4>
+				<div id="main4" style="width: 600px;height:400px;margin:auto"></div>
+				<script>
+						var myChart = echarts.init(document.getElementById('main4'),'dark');
+						var option = {
+								title: {
+									text: ''
+								},
+								tooltip: {
+									trigger: 'axis'
+								},
+
+								legend: {
+									data: ['总人数', '18岁以下', '18-35岁', '35岁以上', ]
+								},
+								grid: {
+									left: '4%',
+									right: '4%',
+									bottom: '3%',
+									containLabel: true
+								},
+								toolbox: {
+									feature: {
+										saveAsImage: {}
+									}
+								},
+								xAxis: {
+									type: 'category',
+									boundaryGap: false,
+									data: ['2014年', '2015年', '2016年', '2017年', '2018年', '2019年', ]
+								},
+								yAxis: {
+									type: 'value'
+								},
+								series: [
+									{
+										name: '总人数',
+										type: 'line',
+										stack: '总量',
+										data: [2955000, 2345000, 2505000, 2553000, 2404000, 2148000]
+									},
+									{
+										name: '18岁以下',
+										type: 'line',
+										stack: '总量',
+										data: [29000, 43000, 22000, 15000, 10000, 7151]
+									},
+									{
+										name: '18-35岁',
+										type: 'line',
+										stack: '总量',
+										data: [1659000, 1422000, 1464000, 1419000, 1250000, 1045000]
+									},
+									{
+										name: '35岁以上',
+										type: 'line',
+										stack: '总量',
+										data: [1264000, 880000, 1019000, 1119000, 1145000, 1095000]
+									}
+								]
+							};
+						myChart.setOption(option);
+				</script>
+			</div>	
+			<!--滥用毒品数据图-->
+			<div class="data2">
+				<h4>2019年吸毒人群中滥用毒品数据</h4>
+				<div id="main3" style="width: 500px;height:400px;margin:auto"></div>
+				<script>
+						var myChart = echarts.init(document.getElementById('main3'),'dark');
+						var option = {
+								title: {
+									text: '',
+									left: 'center'
+								},
+								tooltip: {
+									trigger: 'item',
+									formatter: '{a} <br/>{b} : {c} ({d}%)'
+								},
+								legend: {
+									// orient: 'vertical',
+									// top: 'middle',
+									bottom: 10,
+									left: 'center',
+									data: ['冰毒', '海洛因', '氯胺酮', '大麻', '其他毒品']
+								},
+								series: [
+									{
+										name: '吸食人数（万人）',
+										type: 'pie',
+										radius: '65%',
+										center: ['50%', '50%'],
+										selectedMode: 'single',
+										data: [
+											{value: 118.6, name: '冰毒'},
+											{value: 80.7, name: '海洛因'},
+											{value: 4.9, name: '氯胺酮'},
+											{value: 2.4, name: '大麻'},
+											{value: 8.2, name: '其他毒品'}
+										],
+										emphasis: {
+											itemStyle: {
+												shadowBlur: 10,
+												shadowOffsetX: 0,
+												shadowColor: 'rgba(0, 0, 0, 0.5)'
+											}
+										}
+									}
+								]
+							};
+						myChart.setOption(option);
+				</script>
+			</div>	
+			<div class="img1">
+			<h4>男女吸毒比例</h4>
+			<br>
+			<img src="img/gender.png" width="1000" height="300" alt="男女比例变化图"/>
+			</div>
+		</section>
+		
+		<!--毒品危害部分-->
+		<section id="section5" class="cd-section" >
+			<br><br><br><br><br>
+		  <h2>(四)毒品危害</h2>
+			<br><br><br><br>
+			<div class="text1">毒品，一个吞噬着个人生命与前途，抹杀了一个文明辉煌的邪魔。它摧残着人的身躯，荼毒着人的精神，毁灭着人活着的愿望。</div>
+			
+			 <div id="div1">
+				<a>对身体有依赖</a>
+				<a>对精神有依赖</a>
+				<a>影响身体机理</a>
+				<a>影响寿命</a>
+				<a>助长传染病</a>
+				<a>导致家庭破裂</a>
+				<a>耗费大量钱财</a>
+				<a>扰乱社会秩序</a>
+				<a>破坏社会生产力</a>
+				<a>增加刑事案件</a>
+				<a>危害后代健康</a>
+				
+			</div>
+			<br><br><br><br><br>
+			<div class="data4">
+				<div id="container1" style="width: 600px;height:400px;"></div>
+			    <script>
+						var chart = Highcharts.chart('container1',{
+							chart: {type: 'column'},
+							title: {text: '最难戒的毒品排行榜'},
+							subtitle: {text: '数字越小程度越深'},
+							xAxis: {categories: ['尼古丁','海洛因','可卡因','酒精','咖啡因','大麻',],
+							crosshair: true},
+							yAxis: {min: 0,title: 
+							{text: '程度'}
+									  },
+							tooltip: {headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+										 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+										 '<td style="padding:0"><b>{point.y:.0f} </b></td></tr>',
+										 footerFormat: '</table>',
+										 shared: true,
+										 useHTML: true
+									 },
+							plotOptions: {column: {borderWidth: 0}},
+							series: [{name: '停药反应',data: [3,2,4,1,5,6]},
+										{name: '强化性',data: [4,2,1,3,6,5]},
+										{name: '耐受性',data: [2,1,4,3,5,6]},
+										{name: '依赖性',data: [1,2,3,4,5,6]}
+										]
+							});
+						</script>
+			</div>
+			<div class="data5">
+				<figure class="highcharts-figure">
+				<div id="container2" style="width: 600px;height:400px;"></div>
+				</figure>
+				<script>
+				Highcharts.chart('container2', {
+					chart: {
+						type: 'lollipop'
+					},
+					accessibility: {
+						point: {descriptionFormatter: function (point)
+								{var ix = point.index + 1,x = point.name,y = point.y;return ix + '. ' + x + ', ' + y + '.';}
+							   }
+					},
+					legend: {enabled: false},
+					title: {text: '全国毒品案件'},
+					tooltip: {shared: true},
+					xAxis: {type: 'category'},
+					yAxis: {
+						title: {text: '件'}
+					},
+					series: [{name: 'piece',
+							  data: [{name: '2006年',low: 34350},
+									 {name: '2007年',low: 38730},
+									 {name: '2008年',low: 43347},
+									 {name: '2009年',low:51224},
+									 {name: '2010年',low: 59434},
+									 {name: '2011年',low: 69754},
+									 {name: '2012年',low: 76932},
+									 {name: '2013年',low: 87225},
+									 {name: '2014年',low:107000},
+									]
+							 }]
+				});
+				</script>
+			</div>
+			<br><br>
+		</section>
+		
+	<section id="section6" class="cd-section">
+		<br><br><br><br><br>
+	  <h2>（五）禁毒</h2>
+		<br><br><br><br>
+	  <div class="text1">吸毒是绝望和死亡的代名词，别让“我以为”变成“我后悔”！</div><br>
+            <video width="750" height="450" controls="controls" >
+	         	<source src="video/别让我以为变成我后悔.mp4" type="video/mp4">
+            </video>
+		<br><br><br><br>
+	</section>
+	
+	<footer class="producer">
+		<br>
+		数据来源：2014-2019年中国毒品形势报告
+		<br><br>	
+		制作：李达  赵娇娇  叶润霞
+		<br><br>
+	</footer>
+	</body>
+</html>
